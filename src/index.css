@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.outline-white {
+  @apply font-bold text-transparent font-outline-1;
+}
+
+@layer base {
+  .font-outline-1 {
+    -webkit-text-stroke: 1px white;
+  }
+  .font-outline-0 {
+    -webkit-text-stroke: 0px white;
+  }
+}
+
+.outline-black {
+  @apply font-bold text-transparent font-outline-2;
+}
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 1px black;
+  }
+  .font-outline-0 {
+    -webkit-text-stroke: 0px black;
+  }
+}
