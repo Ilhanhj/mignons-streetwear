@@ -16,15 +16,15 @@ const orderSlice = createSlice({
 
       if (itemInCart) {
         itemInCart.quantity++;
-        increaseNotify();
       } else {
         state.items.push(action.payload);
       }
+      increaseNotify();
     },
     deleteToOrder: (state, action) => {
       const itemInCart = state.items.find((item) => item.id === action.payload.id);
       if (itemInCart.quantity <= 1) {
-        state.items = confirm("Are you sure want to delete this item ?") ? state.items.filter((item) => item.id !== action.payload.id) : state.items; 
+        state.items = confirm("Are you sure want to delete this item ?") ? state.items.filter((item) => item.id !== action.payload.id) : state.items;
         DecreaseNotify2();
       } else {
         state.items.map((item) => (item.id === action.payload.id ? item.quantity-- : item));
