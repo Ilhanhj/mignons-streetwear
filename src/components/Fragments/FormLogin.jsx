@@ -40,7 +40,7 @@ function FormLogin() {
       <div className="flex items-center justify-center w-full h-screen lg:w-full lg:items-center font-urbanist">
         <div className="w-1/2 h-3/4 rounded-lg  ">
           <div className="flex items-center justify-center gap-2">
-            <img src={mignonsLogo} alt="" className="w-[30%] object-cover" />
+            <img src={mignonsLogo} alt="" className="w-full lg:w-[30%] object-cover" />
           </div>
           <div className="flex flex-col gap-2 lg:px-20">
             <form onSubmit={handleLogin} className="flex flex-col gap-3">

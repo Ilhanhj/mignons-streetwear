@@ -41,7 +41,7 @@ function Card({ image, price, id, productName, type }) {
             </Link>
           </div>
           <div className="flex items-end">
-            <button href="#" id={id} className="flex items-center p-4 h-[35%] lg:h-[60%] text-white bg-dark hover:bg-black rounded-xl" onClick={handleAddToOrder}>
+            <button href="#" id={id} className="flex items-center p-5 lg:p-4 h-[35%] lg:h-[60%] text-white bg-dark hover:bg-black rounded-xl" onClick={handleAddToOrder}>
               <RiShoppingCart2Line size={18} color="white" />
             </button>
           </div>

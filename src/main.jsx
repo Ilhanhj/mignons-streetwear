@@ -14,6 +14,10 @@ import AccessoriesPage from "./pages/AccessoriesPage";
 import FootwearPage from "./pages/FootwearPage";
 import RunwayPage from "./pages/RunwayPage";
 import ProductPage from "./pages/ProductPage";
+import TopsPage from "./pages/TopsPage";
+import BottomsPage from "./pages/BottomsPage";
+import Outerwears from "./components/Fragments/Outerwears";
+import CheckoutPage from "./pages/CheckoutPage";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +56,25 @@ const router = createBrowserRouter([
     path: "/product/:id",
     element: <ProductPage />,
   },
+  {
+    path: "/Tops",
+    element: <TopsPage />,
+  },
+  {
+    path: "/Bottoms",
+    element: <BottomsPage />,
+  },
+  {
+    path: "/Outerwears",
+    element: <Outerwears />,
+  },
+  {
+    path: "/checkout",
+    element: <CheckoutPage />,
+  },
+
+  // continue with checkout.jsx
+  // make new card for it
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

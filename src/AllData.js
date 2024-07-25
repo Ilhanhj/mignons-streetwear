@@ -149,6 +149,7 @@ export const products = [
     productName: "Wool Jacquard California Blazer",
     price: getRandomPrice(700, 1500),
     image: mignons1,
+    category: "tops",
   },
   {
     id: 2,
@@ -156,6 +157,7 @@ export const products = [
     productName: "Wool Jacquard Tapered Trouser",
     price: getRandomPrice(700, 1500),
     image: mignons2,
+    category: "bottoms",
   },
   {
     id: 3,
@@ -163,6 +165,7 @@ export const products = [
     productName: "Wool Jacquard California Blazer",
     price: getRandomPrice(700, 1500),
     image: mignons3,
+    category: "accessories",
   },
   {
     id: 4,
@@ -170,6 +173,7 @@ export const products = [
     productName: "Wool Jacquard California Blazer",
     price: getRandomPrice(700, 1500),
     image: mignons4,
+    category: "tops",
   },
   {
     id: 5,
@@ -177,6 +181,7 @@ export const products = [
     productName: "Wool Jacquard California Blazer",
     price: getRandomPrice(700, 1500),
     image: mignons5,
+    category: "bottoms",
   },
   {
     id: 6,
@@ -184,6 +189,7 @@ export const products = [
     productName: "Wool Jacquard California Blazer",
     price: getRandomPrice(700, 1500),
     image: mignons6,
+    category: "accessories",
   },
   {
     id: 7,
@@ -191,6 +197,7 @@ export const products = [
     productName: "Wool Gabardine Double Breasted Lapelless Blazer",
     price: getRandomPrice(700, 1500),
     image: mignons7,
+    category: "tops",
   },
   {
     id: 8,
@@ -198,6 +205,7 @@ export const products = [
     productName: "Wool Gabardine Double Breasted Tapered Trouser",
     price: getRandomPrice(700, 1500),
     image: mignons8,
+    category: "bottoms",
   },
   {
     id: 9,
@@ -205,6 +213,7 @@ export const products = [
     productName: "Suede Mule Low",
     price: getRandomPrice(700, 1500),
     image: mignons9,
+    category: "footwear",
   },
   {
     id: 10,
@@ -212,6 +221,7 @@ export const products = [
     productName: "Bound Hoodie",
     price: getRandomPrice(700, 1500),
     image: mignons10,
+    category: "outerwears",
   },
   {
     id: 11,
@@ -219,6 +229,7 @@ export const products = [
     productName: "Fringe Sweatpant",
     price: getRandomPrice(700, 1500),
     image: mignons11,
+    category: "bottoms",
   },
   {
     id: 12,
@@ -226,6 +237,7 @@ export const products = [
     productName: "Alaska Moc",
     price: getRandomPrice(700, 1500),
     image: mignons12,
+    category: "footwear",
   },
   {
     id: 13,
@@ -233,6 +245,7 @@ export const products = [
     productName: "Collection 8 Denim Jacket",
     price: getRandomPrice(700, 1500),
     image: mignons13,
+    category: "outerwears",
   },
   {
     id: 14,
@@ -240,6 +253,7 @@ export const products = [
     productName: "Collection 8 Jean",
     price: getRandomPrice(700, 1500),
     image: mignons14,
+    category: "bottoms",
   },
   {
     id: 15,
@@ -247,6 +261,7 @@ export const products = [
     productName: "Aerobic High",
     price: getRandomPrice(700, 1500),
     image: mignons15,
+    category: "footwear",
   },
   {
     id: 16,
@@ -254,6 +269,7 @@ export const products = [
     productName: "Collection 8 Denim Jacket",
     price: getRandomPrice(700, 1500),
     image: mignons16,
+    category: "outerwears",
   },
   {
     id: 17,
@@ -261,6 +277,7 @@ export const products = [
     productName: "Collection 8 Denim Jean",
     price: getRandomPrice(700, 1500),
     image: mignons17,
+    category: "bottoms",
   },
   {
     id: 18,
@@ -268,6 +285,7 @@ export const products = [
     productName: "Mock Knit Strap",
     price: getRandomPrice(700, 1500),
     image: mignons18,
+    category: "footwear",
   },
   {
     id: 19,
@@ -275,6 +293,7 @@ export const products = [
     productName: "ESSENTIALS S/S TEE",
     price: getRandomPrice(700, 1500),
     image: essentials1,
+    category: "tops",
   },
   {
     id: 20,
@@ -282,6 +301,7 @@ export const products = [
     productName: "ESSENTIALS SWEATSHORT",
     price: getRandomPrice(700, 1500),
     image: essentials2,
+    category: "bottoms",
   },
   {
     id: 21,
@@ -289,6 +309,7 @@ export const products = [
     productName: "ESSENTIALS HOODIE",
     price: getRandomPrice(700, 1500),
     image: essentials3,
+    category: "outerwears",
   },
   {
     id: 22,
@@ -296,6 +317,7 @@ export const products = [
     productName: "Kids Tank Top",
     price: getRandomPrice(700, 1500),
     image: essentials4,
+    category: "tops",
   },
   {
     id: 23,
@@ -303,6 +325,7 @@ export const products = [
     productName: "Kids Polar Fleece Pant",
     price: getRandomPrice(700, 1500),
     image: essentials5,
+    category: "bottoms",
   },
   {
     id: 24,
@@ -310,6 +333,7 @@ export const products = [
     productName: "Kids Polar Fleece Halfzip Mockneck",
     price: getRandomPrice(700, 1500),
     image: essentials6,
+    category: "outerwears",
   },
   {
     id: 25,
@@ -317,6 +341,7 @@ export const products = [
     productName: "ESSENTIALS S/S TEE",
     price: getRandomPrice(700, 1500),
     image: essentials7,
+    category: "tops",
   },
   {
     id: 26,
@@ -324,6 +349,7 @@ export const products = [
     productName: "ESSENTIALS SWEATSHORT",
     price: getRandomPrice(700, 1500),
     image: essentials8,
+    category: "bottoms",
   },
   {
     id: 27,
@@ -331,6 +357,7 @@ export const products = [
     productName: "ESSENTIALS HOODIE",
     price: getRandomPrice(700, 1500),
     image: essentials9,
+    category: "outerwears",
   },
   {
     id: 28,
@@ -338,6 +365,7 @@ export const products = [
     productName: "Crinkle Nylon Pullover Crewneck",
     price: getRandomPrice(700, 1500),
     image: essentials10,
+    category: "outerwears",
   },
   {
     id: 29,
@@ -345,6 +373,7 @@ export const products = [
     productName: "Crinkle Nylon Trackpants",
     price: getRandomPrice(700, 1500),
     image: essentials11,
+    category: "bottoms",
   },
   {
     id: 30,
@@ -352,6 +381,7 @@ export const products = [
     productName: "Womens Shell Bomber",
     price: getRandomPrice(700, 1500),
     image: essentials12,
+    category: "outerwears",
   },
   {
     id: 31,
@@ -359,6 +389,7 @@ export const products = [
     productName: "KIDS ESSENTIALS TEE ",
     price: getRandomPrice(700, 1500),
     image: essentials13,
+    category: "outerwears",
   },
   {
     id: 32,
@@ -366,6 +397,7 @@ export const products = [
     productName: "KIDS POCKET JEAN",
     price: getRandomPrice(700, 1500),
     image: essentials14,
+    category: "bottoms",
   },
   {
     id: 33,
@@ -373,6 +405,7 @@ export const products = [
     productName: "KIDS ESSENTIALS JACKET",
     price: getRandomPrice(700, 1500),
     image: essentials15,
+    category: "tops",
   },
   {
     id: 34,
@@ -380,6 +413,7 @@ export const products = [
     productName: "ESSENTIALS HEAVY S/S TEE",
     price: getRandomPrice(700, 1500),
     image: essentials16,
+    category: "tops",
   },
   {
     id: 35,
@@ -387,6 +421,7 @@ export const products = [
     productName: "ESSENTIALS SWEATPANTS",
     price: getRandomPrice(700, 1500),
     image: essentials17,
+    category: "bottoms",
   },
   {
     id: 36,
@@ -394,6 +429,7 @@ export const products = [
     productName: "ESSENTIALS 3/4 SLEEVE POLO",
     price: getRandomPrice(700, 1500),
     image: essentials18,
+    category: "tops",
   },
   {
     id: 37,
@@ -401,6 +437,7 @@ export const products = [
     productName: "Performance Tank",
     price: getRandomPrice(700, 1500),
     image: athletics1,
+    category: "tops",
   },
   {
     id: 38,
@@ -408,6 +445,7 @@ export const products = [
     productName: "Base Layer Running Tight",
     price: getRandomPrice(700, 1500),
     image: athletics2,
+    category: "bottoms",
   },
   {
     id: 39,
@@ -415,6 +453,7 @@ export const products = [
     productName: "Los Angeles Runner",
     price: getRandomPrice(700, 1500),
     image: athletics3,
+    category: "footwear",
   },
   {
     id: 40,
@@ -422,6 +461,7 @@ export const products = [
     productName: "Performance Tank",
     price: getRandomPrice(700, 1500),
     image: athletics4,
+    category: "tops",
   },
   {
     id: 41,
@@ -429,6 +469,7 @@ export const products = [
     productName: "Suede Fleece Pant",
     price: getRandomPrice(700, 1500),
     image: athletics5,
+    category: "bottoms",
   },
   {
     id: 42,
@@ -436,6 +477,7 @@ export const products = [
     productName: "One Model",
     price: getRandomPrice(700, 1500),
     image: athletics6,
+    category: "footwear",
   },
   {
     id: 43,
@@ -443,6 +485,7 @@ export const products = [
     productName: "Suede Fleece 1/2 Zip",
     price: getRandomPrice(700, 1500),
     image: athletics7,
+    category: "outerwears",
   },
   {
     id: 44,
@@ -450,6 +493,7 @@ export const products = [
     productName: "Suede Fleece Short",
     price: getRandomPrice(700, 1500),
     image: athletics8,
+    category: "bottoms",
   },
   {
     id: 45,
@@ -457,6 +501,7 @@ export const products = [
     productName: "One Model",
     price: getRandomPrice(700, 1500),
     image: athletics9,
+    category: "footwear",
   },
   {
     id: 46,
@@ -464,6 +509,7 @@ export const products = [
     productName: "Suede Fleece Crewneck",
     price: getRandomPrice(700, 1500),
     image: athletics10,
+    category: "outerwears",
   },
   {
     id: 47,
@@ -471,6 +517,7 @@ export const products = [
     productName: "Suede Fleece Pant",
     price: getRandomPrice(700, 1500),
     image: athletics11,
+    category: "bottoms",
   },
   {
     id: 48,
@@ -478,6 +525,7 @@ export const products = [
     productName: "One Model",
     price: getRandomPrice(700, 1500),
     image: athletics12,
+    category: "footwear",
   },
   {
     id: 49,
@@ -485,6 +533,7 @@ export const products = [
     productName: "Heavy Fleece Hoodie",
     price: getRandomPrice(700, 1500),
     image: athletics13,
+    category: "outerwears",
   },
   {
     id: 50,
@@ -492,6 +541,7 @@ export const products = [
     productName: "Heavy Fleece Sweatpant",
     price: getRandomPrice(700, 1500),
     image: athletics14,
+    category: "bottoms",
   },
   {
     id: 51,
@@ -499,6 +549,7 @@ export const products = [
     productName: "One Model ",
     price: getRandomPrice(700, 1500),
     image: athletics15,
+    category: "footwear",
   },
   {
     id: 52,
@@ -506,6 +557,7 @@ export const products = [
     productName: "Womens Tricot Mock Neck",
     price: getRandomPrice(700, 1500),
     image: athletics16,
+    category: "tops",
   },
   {
     id: 53,
@@ -513,6 +565,7 @@ export const products = [
     productName: "Womens Tricot Short",
     price: getRandomPrice(700, 1500),
     image: athletics17,
+    category: "bottoms",
   },
   {
     id: 54,
@@ -520,6 +573,7 @@ export const products = [
     productName: "One Model",
     price: getRandomPrice(700, 1500),
     image: athletics18,
+    category: "footwear",
   },
   {
     id: 56,

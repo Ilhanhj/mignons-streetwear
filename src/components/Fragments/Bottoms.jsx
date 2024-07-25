@@ -10,12 +10,12 @@ import { products } from "../../AllData";
 import DoubleBanner from "../Elements/DoubleBanner";
 import NavbarProduct from "../Elements/NavbarProduct";
 
-function LandingPages() {
+function Bottoms() {
   const [cart, setCart] = useState([]);
   const [totalQuantity, setTotalQuantity] = useState(0);
   const dispatch = useTotalPriceDispatch();
 
-  const filteredProducts = products.filter((product) => product.type !== "ACCESSORIES" && product.type !== "RUNWAY" && product.type !== "FOOTWEAR").slice(0, 12);
+  const filteredProducts = products.filter((product) => product.category === "bottoms").slice(0, 12);
 
   useEffect(() => {
     setCart(JSON.parse(localStorage.getItem("cart")) || []);
@@ -48,4 +48,4 @@ function LandingPages() {
   );
 }
 
-export default LandingPages;
+export default Bottoms;

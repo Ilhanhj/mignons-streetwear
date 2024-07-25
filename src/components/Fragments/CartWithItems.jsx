@@ -3,17 +3,14 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { addToOrder, deleteToOrder } from "../../redux/slices/orderSlice";
-import { useTotalPrice } from "../../context/TotalPriceContext";
 import { products } from "../../AllData";
-import Button from "../Elements/Button";
 import { Link } from "react-router-dom";
+import ButtonCheckout from "../Elements/ButtonCheckout";
 
 function CartWithItems({ openTrolly }) {
   const order = useSelector((store) => store.order.items);
   const [trolly, setTrolly] = useState(false);
   const dispatch = useDispatch();
-  const { total } = useTotalPrice();
-  const [totalPrice, setTotalPrice] = useState(0); // State untuk menyimpan total harga
 
   useEffect(() => {
     if (products.length > 0 && order.length > 0) {
@@ -32,19 +29,6 @@ function CartWithItems({ openTrolly }) {
       localStorage.setItem("order", JSON.stringify(order));
     }
   }, [order, products, dispatch]);
-
-  useEffect(() => {
-    if (products.length > 0 && order.length > 0) {
-      const sum = order.reduce((acc, item) => {
-        const product = products.find((product) => product.id === item.id);
-        return product ? acc + product.price * item.quantity : acc;
-      }, 0);
-
-      setTotalPrice(sum); // Set total harga ke state lokal
-
-      localStorage.setItem("order", JSON.stringify(order));
-    }
-  }, [order, products]);
 
   return (
     <>
@@ -101,19 +85,7 @@ function CartWithItems({ openTrolly }) {
             );
           })}
       </div>
-      <div className="lg:bottom-0 sticky min-[500px]:flex-row min-[500px]:items-center gap-5  py-20 lg:py-10 border-b border-gray-200 bg-white">
-        <h1 className="pb-3 font-semibold">Total Price</h1>
-        <div className="flex justify-between">
-          <h1 className="">Total</h1>
-          <h1 className="font-bold text-lg">$ {totalPrice}</h1>
-        </div>
-        <div className="flex gap-5 pt-5">
-          <div className={`w-full flex justify-center ${trolly ? "flex-none" : "flex"} `} onClick={openTrolly}>
-            <Button text="text-[#0d0d0d]" bg="bg-transparent" fill="Continue Shopping" />
-          </div>
-          <Button bg="bg-[#0d0d0d]" text="text-white" fill="Checkout" type="button" />
-        </div>
-      </div>
+      <ButtonCheckout openTrolly={openTrolly} />
     </>
   );
 }
