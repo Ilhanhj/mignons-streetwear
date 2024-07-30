@@ -1,11 +1,11 @@
 import mignonsLogo from "/src/assets/logo-login.jpg";
-import { RiArrowDropRightLine } from "react-icons/ri";
 import { RiArrowDropLeftLine } from "react-icons/ri";
 import Input from "../Input";
 
 import { Link } from "react-router-dom";
 import Button from "../Button";
 import { Fragment } from "react";
+import TimelineCheckout from "../../Fragments/TimelineCheckout";
 
 function FormCheckout() {
   return (
@@ -14,28 +14,16 @@ function FormCheckout() {
         <div className="flex justify-center">
           <img src={mignonsLogo} alt="" className="w-[15%]  object-cover" />
         </div>
-        <div className="flex justify-center py-4">
-          <a href="/" className="flex gap-2 text-neutral-600 hover:text-neutral-900 items-center">
-            Cart
-            <RiArrowDropRightLine size={30} color="black" />
-          </a>
-          <a href="/" className="flex gap-2 text-neutral-600 hover:text-neutral-900 items-center">
-            Information
-            <RiArrowDropRightLine size={30} color="black" />
-          </a>
-          <a href="/" className="flex gap-2 text-neutral-600 hover:text-neutral-900 items-center">
-            Shipping
-            <RiArrowDropRightLine size={30} color="black" />
-          </a>
-          <a href="/" className="flex gap-2 text-neutral-600 hover:text-neutral-900 items-center">
-            Payment
-          </a>
-        </div>
-        <div className="flex lg:pt-10 lg:px-10">
+        <TimelineCheckout />
+        <div className="lg:py-5 space-y-3 lg:px-12 text-start pt-5">
+          <h1 className="text-2xl font-bold text-start">Shipping Progress</h1>
+          <h1 className="text-sm text-start">Please provide the relevant information for your order</h1>
+        </div>{" "}
+        <div className="flex  lg:px-10">
           <form action="" className="flex flex-col gap-3 w-full">
-            <h1 className="font-bold text-xl lg:ms-2">Contact</h1>
+            <h1 className="font-thin text-lg lg:ms-2">Contact</h1>
             <Input type="text" placeholder="Email" id="email" name="username" />
-            <h1 className="font-bold text-xl lg:ms-2">Shipping Address</h1>
+            <h1 className="font-thin text-lg lg:ms-2">Shipping Address</h1>
             <Input type="text" placeholder="Country/Region" id="country" name="username" />
             <div className="grid grid-cols-2 gap-3">
               <Input type="text" placeholder="Firstname" id="firstname" name="firstname" />
@@ -65,12 +53,12 @@ function FormCheckout() {
               <div className="flex items-center">
                 <RiArrowDropLeftLine size={30} color="black" />
                 <Link to="/">
-                  <h1 className="text-neutral-600 hover:text-neutral-900">Return to cart</h1>
+                  <h1 className="text-neutral-400 hover:text-neutral-900">Return to cart</h1>
                 </Link>
               </div>
-              <div className="flex w-1/2">
-                <Button text="text-white" bg="bg-[#0d0d0d]" fill="Continue to shipping" />
-              </div>
+              <Link onClick={() => window.scrollTo(0, 0)} to={`/Payment`}>
+                <Button text="text-white" bg="bg-[#0d0d0d]" fill="Continue to Payment" />
+              </Link>
             </div>
           </form>
         </div>

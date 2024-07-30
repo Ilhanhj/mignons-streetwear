@@ -34,7 +34,7 @@ function LandingPages() {
           </h1>
         </div>
         <NavbarProduct />
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 font-urbanist px-5 lg:px-20 lg:pb-32 ">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 font-urbanist px-5 lg:px-20 lg:pb-32 pb-10 ">
           {filteredProducts.map((product) => {
             {
               return <Card key={product.id} productName={product.productName} type={product.type} price={product.price} image={product.image} id={product.id} />;

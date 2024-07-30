@@ -15,7 +15,7 @@ function DoubleBanner() {
                 </div>
                 <h1 className="text-2xl text-white uppercase">mission</h1>
               </div>
-              <p className="text-neutral-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nulla sequi recusandae aspernatur earum fugit fugiat esse, vitae quibusdam maxime.</p>
+              <p className="text-neutral-400 text-justify">We`re on mission to empower creative independence in a commercial world and incredible.</p>
             </div>
             <div className="flex flex-col gap-5">
               <div className="flex items-center gap-5">
@@ -24,7 +24,7 @@ function DoubleBanner() {
                 </div>
                 <h1 className="text-2xl text-white uppercase">sustanibility</h1>
               </div>
-              <p className="text-neutral-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nulla sequi recusandae aspernatur earum fugit fugiat esse, vitae quibusdam maxime.</p>
+              <p className="text-neutral-400 text-justify">We`re challenging conventional retail, putting and end to dead stock, unconventional wante and more funtastic`.</p>
             </div>
           </div>
         </div>

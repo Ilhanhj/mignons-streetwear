@@ -7,7 +7,7 @@ function Footer() {
         <div className="flex flex-col text-center lg:justify-between lg:px-11 lg:text-start gap-5 lg:flex lg:flex-row">
           <div className="flex flex-col gap-2 lg:max-w-md">
             <div className="flex justify-center lg:justify-center ">
-              <img src={mignonsLogo} alt="" className="w-full object-cover" />{" "}
+              <img src={mignonsLogo} alt="" className="w-[20%] lg:w-full object-cover" />{" "}
             </div>
           </div>
           <div className="flex gap-5 justify-center lg:justify-between">

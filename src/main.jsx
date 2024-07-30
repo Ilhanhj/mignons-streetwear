@@ -17,7 +17,9 @@ import ProductPage from "./pages/ProductPage";
 import TopsPage from "./pages/TopsPage";
 import BottomsPage from "./pages/BottomsPage";
 import Outerwears from "./components/Fragments/Outerwears";
-import CheckoutPage from "./pages/CheckoutPage";
+import ShippingPage from "./pages/ShippingPage";
+import PaymentPage from "./pages/PaymentPage";
+import ConfirmationPage from "./pages/ConfirmationPage";
 
 const router = createBrowserRouter([
   {
@@ -69,12 +71,17 @@ const router = createBrowserRouter([
     element: <Outerwears />,
   },
   {
-    path: "/checkout",
-    element: <CheckoutPage />,
+    path: "/Shipping",
+    element: <ShippingPage />,
   },
-
-  // continue with checkout.jsx
-  // make new card for it
+  {
+    path: "/Payment",
+    element: <PaymentPage />,
+  },
+  {
+    path: "/Confirmation",
+    element: <ConfirmationPage />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

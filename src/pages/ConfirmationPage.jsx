@@ -1,17 +1,17 @@
 import { useEffect } from "react";
 import LandingPageLayouts from "../components/Layouts/LandingPageLayouts";
-import Checkout from "../components/Fragments/Checkout";
+import Confirmation from "../components/Fragments/Confirmation";
 
-function CheckoutPage() {
+function ConfirmationPage() {
   useEffect(() => {
     document.title = "MIGNONS";
   }, []);
 
   return (
     <LandingPageLayouts>
-      <Checkout />
+      <Confirmation />
     </LandingPageLayouts>
   );
 }
 
-export default CheckoutPage;
+export default ConfirmationPage;

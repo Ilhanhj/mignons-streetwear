@@ -28,7 +28,7 @@ function Card({ image, price, id, productName, type }) {
       <div className="group text-md cursor-pointer flex-justify-between">
         <div className="flex flex-col">
           <Link onClick={() => window.scrollTo(0, 0)} to={`/product/${id}`}>
-            <img className="w-full group-hover:opacity-50" src={image} alt="product" />
+            <img className="w-full group-hover:opacity-50 rounded-xl overflow-hidden" src={image} alt="product" />
           </Link>
         </div>
         <div className="flex justify-between pt-2">

@@ -8,15 +8,15 @@ function Hero() {
           <h1 className="outline-white text-center lg:text-4xl text-xl font-bold ">MIGNONS RUNWAY 2024</h1>
         </Link>
       </div>
-      <div className="lg:col-span-2 lg:row-span-2 bg-[url('/src/assets/grid-2.jpg')] bg-cover bg-right-bottom lg:bg-right-top rounded-xl p-5 lg:p-24 flex flex-col justify-center items-start text-white shadow-xl ">
-        <h3 className="text-2xl invert lg:invert-0 lg:text-4xl font-black uppercase italic">
-          real art <span className="text-xl invert lg:invert-0 font-semibold outline-black">by</span>
+      <div className="lg:col-span-2 lg:row-span-2 bg-[url('/src/assets/grid-2-2.jpg')] bg-cover bg-right-bottom lg:bg-right-top rounded-xl p-5 lg:p-20 flex flex-col justify-center items-start shadow-xl ">
+        <h3 className="text-2xl  lg:text-5xl font-black uppercase italic outline-white">
+          real art <span className="text-xl font-bold ">by</span>
         </h3>
-        <h3 className="text-2xl invert lg:invert-0 lg:text-4xl font-black uppercase italic">
-          real artist <span className="text-xl invert lg:invert-0 font-semibold outline-black">for</span>
+        <h3 className="text-2xl  lg:text-5xl font-black uppercase italic outline-white">
+          real artist <span className="text-xl  font-bold ">for</span>
         </h3>
-        <h3 className="text-2xl invert lg:invert-0 lg:text-4xl font-black uppercase italic">
-          real people <span className="text-xl invert lg:invert-0 font-semibold outline-black">only</span>
+        <h3 className="text-2xl  lg:text-5xl font-black uppercase italic outline-white">
+          real people <span className="text-xl  font-bold ">only</span>
         </h3>
       </div>
       <a href="" className="hover:brightness-50 transition-all duration-300">

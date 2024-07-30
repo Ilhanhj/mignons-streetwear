@@ -11,6 +11,15 @@ function TotalCheckout() {
   const [totalOrder, setTotalOrder] = useState(0);
   const { total } = useTotalPrice();
   const [totalPrice, setTotalPrice] = useState(0); // State untuk menyimpan total harga
+  const sizes = ["S", "M", "L", "XL", "XXL"]; // Array of sizes
+  const colors = ["BLACK", "BEIGE", "GRAY"]; // Array of colors
+
+  const getRandomSize = () => {
+    return sizes[Math.floor(Math.random() * sizes.length)];
+  };
+  const getRandomColor = () => {
+    return colors[Math.floor(Math.random() * colors.length)];
+  };
 
   useEffect(() => {
     const newTotalOrder = order.reduce((acc, item) => acc + item.quantity, 0);
@@ -41,19 +50,25 @@ function TotalCheckout() {
             return (
               product && (
                 <>
-                  <div className="flex w-full">
-                    <div key={product.id} className="flex lg:w-14 lg:h-14 relative ">
-                      <span className="lg:text-xs lg:absolute absolute flex justify-center items-center lg:w-6 w-7 lg:h-6 h-7 p-1 lg:ms-16 lg:mb-10 ms-[5.5rem]  text-white bg-red-500 rounded-full lg:-right-2 lg:-top-2">
-                        {item.quantity}
-                      </span>
-                      <img src={product.image} alt="" className="w-[30%] lg:w-full lg:object-cover rounded-lg" />
+                  <div key={product.id} className="flex flex-row min-[500px]:flex-row min-[500px]:items-center gap-5  border-b border-gray-200 group">
+                    <div className="w-full lg:max-w-[100px]">
+                      <img src={product.image} alt="product" className="w-[70%] rounded-xl overflow-hidden" />
                     </div>
-                    <div className="flex flex-col ml-4	">
-                      <h1 className="text-neutral-500 text-sm">{product.type}</h1>
-                      <h1 className=" text-[#0d0d0d] text-sm font-bold">{product.productName}</h1>
-                      <h1 className="text-neutral-500 text-sm">Black / XL</h1>
-                      <h1 className="text-[#0d0d0d] text-lg font-bold absolute lg:right-10">$ {product.price}</h1>
+                    <div className="grid w-full grid-cols-1 md:grid-cols-4">
+                      <div className="md:col-span-3">
+                        <div className="flex flex-col text-start">
+                          <p className="text-sm text-start text-gray-600 transition-all duration-300 ">{product.type}</p>
+                          <h6 className="text-base font-semibold  text-black">{product.productName}</h6>
+                          <h6 className="text-base text-black">
+                            {getRandomColor()}/{getRandomSize()}
+                          </h6>
+                          <p className="text-sm text-start text-[#0d0d0d] transition-all duration-300 ">
+                            $ {product.price} ({item.quantity})
+                          </p>
+                        </div>
+                      </div>
                     </div>
+                    <p className="text-lg font-bold text-start text-[#0d0d0d] transition-all duration-300 ">${item.quantity * product.price}</p>
                   </div>
                   <hr className="border-neutral-500 my-5" />
                 </>

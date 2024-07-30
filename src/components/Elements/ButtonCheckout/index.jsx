@@ -34,12 +34,14 @@ function ButtonCheckout({ openTrolly }) {
         <h1 className="font-bold text-lg">$ {totalPrice}</h1>
       </div>
       <div className="flex w-full gap-5 pt-5">
-        <div className={`w-full flex justify-center ${trolly ? "flex-none" : "flex"} `} onClick={openTrolly}>
+        <div className={`w-1/2 flex justify-center ${trolly ? "flex-none" : "flex"} `} onClick={openTrolly}>
           <Button text="text-[#0d0d0d]" bg="bg-transparent" fill="Continue Shopping" />
         </div>
-        <Link onClick={() => window.scrollTo(0, 0)} to={`/checkout`}>
-          <Button bg="bg-[#0d0d0d]" text="text-white" fill="Checkout" type="button" />
-        </Link>
+        <div className="w-1/2">
+          <Link onClick={() => window.scrollTo(0, 0)} to={`/Shipping`}>
+            <Button bg="bg-[#0d0d0d]" text="text-white" fill="Checkout" type="button" />
+          </Link>
+        </div>
       </div>
     </div>
   );
