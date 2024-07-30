@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function List() {
   return (
-    <div className="grid grid-cols-4 lg:grid-cols-4 gap-1 lg:gap-3 pt-10 text-center pe-6 lg:px-0 ">
+    <div className="grid grid-cols-4 lg:grid-cols-4 gap-1 lg:gap-3 lg:pt-10 text-center pe-6 lg:px-0 ">
       <div className="grid  ">
         <Link
           to={`/`}
