@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import EmptyCart from "../../Fragments/EmptyCart";
 import CartWithItems from "../../Fragments/CartWithItems";
 import { RiCloseLargeFill } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
@@ -66,35 +67,28 @@ function Navbar() {
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
       </div>
-      <div className="scale-0 origin-top-right bg-white text-[#0d0d0d] p-5 -pt-24 h-screen w-full fixed z-50" ref={ulRef}>
+      <motion.div className="scale-0 origin-top-right bg-white text-[#0d0d0d] p-5 -pt-24 h-screen w-full fixed z-50" initial={{ scale: 0 }} animate={{ scale: isOpen ? 1 : 0 }} transition={{ duration: 0.3, ease: "easeInOut" }} ref={ulRef}>
         <div className="flex justify-end">
           <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
         <div className="flex flex-col gap-5 text-center items-center pt-48">
-          <div
-            className={`text-md uppercase transition-all duration-75 ${
-              // Periksa apakah pathname cocok dengan "/mignons"
-              location.pathname === "/mignons"
-                ? "text-[#0d0d0d] font-bold" // Jika cocok, gunakan warna gelap
-                : "text-neutral-500 hover:text-[#0d0d0d]" // Jika tidak cocok, gunakan warna normal dengan efek hover
-            }`}
-          >
-            <Link onClick={() => window.scrollTo(0, 0)} to={`/mignons`}>
+          <div className={`text-2xl uppercase transition-all duration-75 ${location.pathname === "/mignons" ? "text-[#0d0d0d] font-bold" : "text-neutral-500 hover:text-[#0d0d0d]"}`}>
+            <Link onClick={() => window.scrollTo(0, 0)} to="/mignons">
               MIGNONS
             </Link>
           </div>
-          <div className={`text-md uppercase transition-all duration-75 ${location.pathname === "/athletics" ? "text-[#0d0d0d] font-bold" : "text-neutral-500 hover:text-[#0d0d0d]"}`}>
-            <Link onClick={() => window.scrollTo(0, 0)} to={`/athletics`}>
+          <div className={`text-2xl uppercase transition-all duration-75 ${location.pathname === "/athletics" ? "text-[#0d0d0d] font-bold" : "text-neutral-500 hover:text-[#0d0d0d]"}`}>
+            <Link onClick={() => window.scrollTo(0, 0)} to="/athletics">
               ATHLETICS
             </Link>
           </div>
-          <div className={`text-md uppercase transition-all duration-75 ${location.pathname === "/essentials" ? "text-[#0d0d0d] font-bold" : "text-neutral-500 hover:text-[#0d0d0d]"}`}>
-            <Link onClick={() => window.scrollTo(0, 0)} to={`/essentials`}>
+          <div className={`text-2xl uppercase transition-all duration-75 ${location.pathname === "/essentials" ? "text-[#0d0d0d] font-bold" : "text-neutral-500 hover:text-[#0d0d0d]"}`}>
+            <Link onClick={() => window.scrollTo(0, 0)} to="/essentials">
               ESSENTIALS
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

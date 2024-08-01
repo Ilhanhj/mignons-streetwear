@@ -7,9 +7,7 @@ import { RiCloseLargeFill } from "react-icons/ri";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function ConfirmationModal({ openTrolly }) {
-  const [trolly, setTrolly] = useState(false);
-
+function ConfirmationModal() {
   return (
     <>
       <div className="flex flex-col lg:min-[500px]:flex-col min-[500px]:items-center gap-2 ">

@@ -24,25 +24,16 @@ function Bottoms() {
   return (
     <Fragment>
       <Navbar />
-      <div className="w-full z-10 font-urbanist">
-        <div className="w-full pt-24">
-          <Hero />
-        </div>
-        <div className=" flex justify-between items-center pt-5 px-5 lg:px-20 lg:pt-10">
-          <h1 className="text-2xl lg:text-4xl font-[#0d0d0d] font-bold uppercase">
-            shop our <span className="outline-black">best collection</span>
-          </h1>
-        </div>
-        <NavbarProduct />
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 font-urbanist px-5 lg:px-20 lg:pb-32 ">
-          {filteredProducts.map((product) => {
-            {
-              return <Card key={product.id} productName={product.productName} type={product.type} price={product.price} image={product.image} id={product.id} />;
-            }
-          })}
-        </div>
-        <DoubleBanner />
+      <Hero />
+      <NavbarProduct />
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 font-urbanist px-5 lg:px-20 ">
+        {filteredProducts.map((product) => {
+          {
+            return <Card key={product.id} productName={product.productName} type={product.type} price={product.price} image={product.image} id={product.id} />;
+          }
+        })}
       </div>
+      <DoubleBanner />
       <Footer />
     </Fragment>
   );

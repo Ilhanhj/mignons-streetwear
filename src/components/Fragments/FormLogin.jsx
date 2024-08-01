@@ -7,6 +7,7 @@ import Button from "../Elements/Button";
 import { login } from "../../service/auth.service";
 import mignonsLogo from "/src/assets/logo-login.jpg";
 import Navbar from "../Elements/Navbar";
+import DontHaveAccount from "../Elements/DontHaveAccount";
 
 function FormLogin() {
   const [loginFailed, setLoginFailed] = useState("");
@@ -51,12 +52,7 @@ function FormLogin() {
             </form>
           </div>
           <LoginSocial />
-          <p className="text-sm text-center text-slate-400 lg:pb-10">
-            Don`t have an account ?{" "}
-            <a href="/register" className="text-black">
-              Register
-            </a>
-          </p>
+          <DontHaveAccount />
         </div>
       </div>
     </>
