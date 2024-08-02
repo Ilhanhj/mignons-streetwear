@@ -11,7 +11,7 @@
 <h3>Build with:</h3>
 
 -   [![TailwindCSS][tailwindcss-badge]]
--   [![ReactJS][react-badge]]
+-   [![ReactJs][react-badge]]
 
 [tailwindcss-badge]: https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
 
