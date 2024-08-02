@@ -10,12 +10,12 @@
 
 <h3>Build with:</h3>
 
--   [![TailwindCSS][tailwindcss-badge]]
--   [![ReactJs][react-badge]]
+-   ![TailwindCSS][tailwindcss-badge]
+-   ![ReactJs][react-badge]
 
 [tailwindcss-badge]: https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
 
-[react-badge] :https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=flat-square
+[react-badge]:https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=flat-square
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
