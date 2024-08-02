@@ -1,19 +1,21 @@
-<div align='center'><img src='./assets/logo-login.jpg'/></div>
+<div align='center'><img src='src/assets/logo-login.jpg'/></div>
 
 <h2>About the project</h2>
 
-<p>This is a minimalist e-commerce website built with React and CSS. This
-website features a modern and intuitive design, with easy-to-use navigation and a
-simple shopping experience that puts the focus on the products.</p>
+<p>Welcome to Mignon's Streetwear, a cutting-edge e-commerce site crafted with React and Tailwind CSS. Our platform boasts a sleek, modern design and intuitive navigation, ensuring a seamless shopping experience. Browse our curated selection of streetwear, where the focus is always on the products you love. Enjoy the simplicity and elegance of our user-friendly interface, making it easier than ever to find and purchase your favorite styles.</p>
 
-<p>Credits for the design goes to <a href='https://github.com/Abderraouf-Rahmani'>Abderraouf</a></p>
+<p>Credits for the design goes to <a href='https://fearofgod.com/'>Fear Of God</a></p>
 
-👉 Live Demo: <a href='https://minimalist-e-commerce.vercel.app/'>Ecommerce Demo</a>
+👉 Live Demo: <a href='https://mignons-streetwear.vercel.app/'>Mignons Website Demo</a>
 
 <h3>Build with:</h3>
 
-» Vanilla CSS <br>
-» React JS
+-   [![TailwindCSS][tailwindcss-badge]]
+-   [![ReactJS][react-badge]]
+
+[tailwindcss-badge]: https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+
+[react-badge] : https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
