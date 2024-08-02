@@ -15,7 +15,7 @@
 
 [tailwindcss-badge]: https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
 
-[react-badge]:https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge
+[react-badge]:https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=flat-square
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
