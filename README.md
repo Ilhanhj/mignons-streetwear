@@ -12,36 +12,65 @@
 
 -   ![TailwindCSS][tailwindcss-badge]
 -   ![ReactJs][react-badge]
+-   ![Redux][redux-badge]
+-   ![reactrouter][reactrouter-badge]
 
 [tailwindcss-badge]: https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
 
 [react-badge]:https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge
 
+[redux-badge]:https://img.shields.io/badge/-Redux-764ABC?style=flat&logo=redux&logoColor=white
+
+[reactrouter-badge]:https://img.shields.io/badge/reactrouter-CA4245?style=for-the-badge&logo=reactrouter&logoColor=black
 <h2>Screenshots of the Project 📸</h2>
 <br>
 <h3 align='center'>Home Page 🏡</h3>
 
 <div align='center'>
-<img src='https://user-images.githubusercontent.com/105128267/213868640-e3421f0a-bb10-4352-82a1-1bda4df821e9.png'/>
+<img src='src/assets/readme/home.png'/>
 </div>
 
 <br><br>
 <h3 align='center'>Categories Page 👇</h3>
 
 <div align='center'>
-<img src='https://user-images.githubusercontent.com/105128267/213868668-55c03494-0835-43e0-9cb1-429b9a243a65.png'/>
+<img src='src/assets/readme/categories.png'/>
+
+
+<br>
+<br>
+<h3 align='center'>Login Page 💻</h3>
+
+<div align='center'>
+<img src='src/assets/readme/login.png'/>
 
 <br>
 <br>
 <h3 align='center'>Product Page 🎁</h3>
 
 <div align='center'>
-<img src='https://user-images.githubusercontent.com/105128267/213868690-5737cead-a56e-4500-88ff-d182426ce072.png'/>
+<img src='src/assets/readme/product.png'/>
+
 
 <br>
 <br>
 <h3 align='center'>Shopping Cart 🛒</h3>
 
 <div align='center'>
-<img src='https://user-images.githubusercontent.com/105128267/213868718-6760d6de-9060-406f-816d-f9b317bb0e0c.png'/>
+<img src='src/assets/readme/checkout.png'/>
+
+<br>
+<br>
+<h3 align='center'>Payment Page 💻</h3>
+
+<div align='center'>
+<img src='src/assets/readme/payment.png'/>
+
+<br>
+<br>
+<h3 align='center'>Confirmation Page 💻</h3>
+
+<div align='center'>
+<img src='src/assets/readme/confirmation.png'/>
+
 </div>
